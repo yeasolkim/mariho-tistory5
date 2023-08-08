@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: "0 14 * * *"
+    - cron: "0 13 * * *"
 
 jobs:
   build:
@@ -36,9 +36,9 @@ jobs:
       run: |
         bash setup_env.sh
   
-    - name: sportsnews_writer
+    - name: housenews_writer
       run: |
-        python sportsnews_writer.py
+        python house_news_writer.py
 
 
 
